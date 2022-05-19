@@ -53,8 +53,8 @@ module.exports = {
             .setURL(taggedUser.displayAvatarURL({ dynamic: true, size: 2048, format: "webp" }))
         )
         
-		    embed = new MessageEmbed()
-		    .setColor(GREEN)
+	embed = new MessageEmbed()
+	.setColor(GREEN)
         .setTitle(`${taggedUser.user.username}'s Avatar`)
         .setImage(taggedUser.displayAvatarURL({ dynamic: true, size: 2048 }))
         interaction.followUp({ embeds: [embed], components: [buttons]})
