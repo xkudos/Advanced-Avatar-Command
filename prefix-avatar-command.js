@@ -1,7 +1,5 @@
 const { Message, Client, MessageButton, MessageEmbed } = require("discord.js");
 const { MessageActionRow } = require("discord.js");
-const fetch = require('node-fetch')
-const shortcuts = require('../../shortcuts.json')
 
 module.exports = {
     name: "pfp",
@@ -46,8 +44,8 @@ module.exports = {
             .setURL(taggedUser.displayAvatarURL({ dynamic: true, size: 2048, format: "webp" }))
         )
         
-		embed = new MessageEmbed()
-		.setColor(shortcuts.noColorEmbed)
+	embed = new MessageEmbed()
+	.setColor(GREEN)
         .setTitle(`${taggedUser.username}'s Avatar`)
         .setImage(taggedUser.displayAvatarURL({ dynamic: true, size: 2048 }))
         message.channel.send({ embeds: [embed], components: [buttons]})
