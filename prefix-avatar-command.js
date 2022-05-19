@@ -1,3 +1,4 @@
+//This is a command within Lounge Bot
 const { Message, Client, MessageButton, MessageEmbed } = require("discord.js");
 const { MessageActionRow } = require("discord.js");
 
